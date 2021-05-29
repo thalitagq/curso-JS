@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desafio 29</title>
+</head>
+<body>
+  <header>
+    <h1 data-js="company-name" style="margin: 0;"></h1>
+    <h3 data-js="company-phone" style="margin-top: 0;"></h3>
+  </header>
+  <form data-js="form" style="width: 250px;display: flex;flex-direction: column;margin-bottom: 30px;">
+    <label>Imagem(url)</label>
+    <input src="" data-js="img">
+    <label >Marca/Modelo</label>
+    <input type="text" data-js="marca-modelo">
+    <label >Ano</label>
+    <input type="text" data-js="ano">
+    <label >Cor</label>
+    <input type="text" data-js="cor">
+    <label >Placa</label>
+    <input type="text" data-js="placa">
+    <button type="submit" data-js="submit" style="margin-top: 10px;">Cadastrar</button>
+  </form>
+
+  <table >
+    <thead>
+      <tr>
+        <th>Carro</th>
+        <th>Marca/Modelo</th>
+        <th>Ano</th>
+        <th>Placa</th>
+        <th>Cor</th>
+      </tr>
+    </thead>
+    <tbody data-js="table-body">
+    </tbody>
+  </table>
+
+  <script src="dom.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>

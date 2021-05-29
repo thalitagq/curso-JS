@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desafio 31</title>
+</head>
+<body>
+  <style>
+    body{
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      margin: 0;
+    }
+    
+    form{
+      width: 250px;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 30px;
+    }
+
+    input{
+      height: 30px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+
+    h1, h3,label{
+      color: #333;
+      margin: 0;
+    }
+
+    label{
+      font-weight: 600;
+    }
+
+    header{
+      border-bottom: 1px solid #e5e5e5;
+      padding: 10px 20px;
+      margin-bottom: 30px;
+    }
+
+    .container{
+      display: flex;
+      justify-content: space-evenly;
+    }
+
+    button{
+      border: 0;
+      height: 35px;
+      color: #fff;
+      background: #333;
+      border-radius: 5px;
+    }
+
+    table, tbody, thead{
+      border: 1px solid #333;
+      color: #333;
+    }
+
+    tr{
+      border-bottom: 1px solid #333;
+    }
+
+    th{
+      min-width: 100px;
+    }
+
+    img{
+      max-width: 200px;
+    }
+
+  </style>
+  <header>
+    <h1 data-js="company-name" ></h1>
+    <h3 data-js="company-phone"></h3>
+  </header>
+
+  <div class="container">
+    <form data-js="form">
+      <label>Imagem(url)</label>
+      <input src="" data-js="image">
+      <label >Marca/Modelo</label>
+      <input type="text" data-js="brandModel">
+      <label >Ano</label>
+      <input type="text" data-js="year">
+      <label >Cor</label>
+      <input type="text" data-js="color">
+      <label >Placa</label>
+      <input type="text" data-js="plate">
+      <button type="submit" data-js="submit" style="margin-top: 10px;">Cadastrar</button>
+    </form>
+  
+    <table >
+      <thead>
+        <tr>
+          <th>Carro</th>
+          <th>Marca/Modelo</th>
+          <th>Ano</th>
+          <th>Placa</th>
+          <th>Cor</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody data-js="table-body">
+      </tbody>
+    </table>
+  </div>
+
+  <script src="dom.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
